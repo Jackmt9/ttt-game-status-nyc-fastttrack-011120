@@ -14,7 +14,7 @@ def won?(board)
       return win_Position
     end
   end
-  return false
+  return nil
 end
 
 
