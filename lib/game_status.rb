@@ -14,7 +14,7 @@ def won?(board)
       return win_Position
     end
   end
-  return false
+  return nil
 end
 
 
@@ -37,7 +37,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if won?(board) != false || draw?(board) == true || full?(board) == true
+  if won?(board) != nil || draw?(board) == true || full?(board) == true
     return true
   else
     return false
