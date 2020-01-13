@@ -19,7 +19,17 @@ end
 
 
 def full?(board)
-board.all? {|index| index == "X" || index == "O"}
+  counter = 0
+  board.each do |possible_Token|
+    if possible_Token == "O" || possible_Token == "X"
+      counter+=1
+    end
+  end
+  if counter == 9
+    return true
+  else
+    return false
+  end
 end
 
 def draw?(board)
